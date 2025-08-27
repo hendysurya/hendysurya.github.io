@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lava Tour Merapi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <img src="LOGO.png" alt="Logo Perusahaan" class="logo">
+            <nav>
+              <div id="ham-icon" class="ham-icon">
+               <i class="ph ph-list"></i>
+              </div>
+                <ul id="nav-links" class="nav-links hidden">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li class="dropdown">
+                      <a href="index.html#jeep">Paket</a>
+                      <ul class="dropdown-content">
+                        <li><a href="index.html#jeep">Jeep</a></li>
+                        <li><a href="index.html#atv">ATV</a></li>
+                        <li><a href="index.html#resto">Resto</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="index.html#tentang">About</a></li>
+                    <li><a href="index.html#galeri">Galeri</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                  </ul>
+            </nav>
+            <script src="main.js"></script>
+        </div>
+    </header>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  
+    
+
+<!-- coba -->
+<section class="about1" id="tentang">
+  <div class="about1-container">
+    <div class="about1-image">
+      <img src="PP.png" alt="Jeep Lava Tour" />
+    </div>
+    <div class="about1-text">
+      <h2 class="hh">Tentang Kami.</h2>
+      <h3>Lava Tour Merapi.</h3>
+      <p>Profil
+Jeep Lava Tour Merapi adalah komunitas wisata yang menawarkan pengalaman seru keliling lereng Gunung Merapi dengan jeep 4x4. Nggak cuma sekadar jalan-jalan, tur ini mengajak kamu menjelajahi alam yang menakjubkan sekaligus mengenal lebih dekat sejarah dan cerita di balik letusan Merapi. Rutenya penuh tantangan dan menyenangkan, melewati batu-batu besar, sungai kecil, hingga jalur off-road yang bikin adrenalin naik!
+
+Selama perjalanan, kamu bakal diajak mampir ke tempat-tempat ikonik seperti Museum Sisa Hartaku, Bunker Kaliadem, dan spot kece buat lihat sunrise langsung dari kaki gunung. Selain seru-seruan, kamu juga bisa belajar banyak soal kehidupan masyarakat sekitar yang pernah terdampak letusan. Dengan tim driver yang ramah dan pengalaman yang menyenangkan, kami siap nemenin petualangan tak terlupakan kamu di Merapi!</p>
+      <!-- <p>
+        Pengunjung diajak mengunjungi destinasi ikonik seperti Museum Sisa Hartaku, Bunker Kaliadem, hingga pemandangan megah Sunrise Merapi.
+        Selain menikmati lanskap yang menakjubkan, tur ini juga menyajikan kisah mendalam tentang dampak letusan Merapi bagi masyarakat sekitar.
+      </p> -->
+      <a href="index.html" class="read-more-btn">Beranda</a>
+    </div>
+  </div>
+</section>      
+
+
+  <!-- kontak -->
+  <section class="contact" id="contact"> 
+    <h2>Ada Pertanyaan?</h2>
+    <p>Hubungi kami langsung melalui WhatsApp untuk reservasi atau informasi lebih lanjut.</p>
+    <a href="https://wa.me/6281225015958" target="_blank" class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Ikon WhatsApp">
+      Chat via WhatsApp
+    </a>
+  </section>
+</section>
+  
+  
+  <!-- Lightbox (Pop-up Image Viewer) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Tampilan Penuh" />
+  </div>
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+  
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+
+<!-- FOOTER -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="footer">
+  <div class="footer-container">
+
+   <!-- Kiri: Logo dan Sosial Media -->
+<div class="footer-left">
+  <div class="footer-logo">
+    <img src="LOGO.png" alt="Logo">
+    <div class="logo-underline"></div>
+  </div>
+
+  <h4 class="find-us-title">Sosial Media</h4>
+  <div class="footer-socials">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/jeep.merapi.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
+
+
+    <div class="footer-center">
+      <h3>Kontak Kami</h3>
+      <div class="footer-contact">
+    
+        <!-- WhatsApp -->
+        <div class="contact-item">
+          <a href="https://wa.me/6281225015958" target="_blank" class="contact-icon" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://wa.me/6281225015958" target="_blank" class="contact-text">
+            081225015958
+          </a>
+        </div>
+    
+        <!-- Email -->
+        <div class="contact-item">
+          <a href="mailto:info@jeepmerapi.com" target="_blank" class="contact-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="mailto:info@jeepmerapi.com" target="_blank" class="contact-text">
+            info@jeepmerapi.com
+          </a>
+        </div>
+    
+      </div>
+    </div>
+    
+
+    <!-- Kanan: Google Maps -->
+    <div class="footer-right">
+      <h3>Lokasi Kami</h3>
+      <p>Karanggeneng, RT.002/RW.015, Umbulharjo, Kec. Cangkringan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55583</p>
+      <br>
+      <p>
+        <a href="https://maps.app.goo.gl/68wDpARgNiPqwfVB6" target="_blank" style="color: white; text-decoration: underline;">
+          Lihat di Google Maps
+        </a>
+      </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31635.936669077208!2d110.39834531083983!3d-7.63010859999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5df8ee4e1d57%3A0x10d9a61c56645cc0!2sRumah%20Makan%20Bonda%20Merapi!5e0!3m2!1sid!2sid!4v1748358826894!5m2!1sid!2sid" 
+      width="600" height="450" style="border:0;" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2023 Jeep Wisata Merapi. All rights reserved.</p>
+  </div>
+</div>
+
+            <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6281225015958" class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+</a>
+
+</body>
+</html>
